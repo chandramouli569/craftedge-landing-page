@@ -216,48 +216,68 @@ main {
 }
 
 /* === Footer Section === */
-footer {
-  background: var(--sienna-2);
-  color: var(--white);
-  padding: 3rem 2rem;
-  min-height: 50vh;
+/* ===== NEW FOOTER DESIGN ===== */
+
+.footer {
+  background: #1a1a1a;
+  color: #eae0c7;
+  padding: 3rem 2rem 1.5rem;
 }
 
-.footer-inner {
-  max-width: 1280px;
-  margin: 0 auto;
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
-/* Logo inside footer */
-.footer-logo {
+.footer h2 {
   font-family: "Veneer", serif;
-  font-size: 1.5rem;
-  font-weight: normal;
-  letter-spacing: 1px;
+  color: #b1560e;
+  font-size: 2rem;
 }
 
-/* Link and Contact Groups */
-.footer-links,
-.footer-contact {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.footer h4 {
+  margin-bottom: 1rem;
+  color: #c19f7a;
 }
 
-.footer-links a,
-.footer-contact a {
-  color: var(--papaya-whip);
-  font-size: 0.95rem;
+.footer a {
+  display: block;
   text-decoration: none;
+  color: #eae0c7;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  transition: 0.3s;
 }
 
-.footer-links a:hover,
-.footer-contact a:hover {
-  color: var(--tan);
+.footer a:hover {
+  color: #b1560e;
+}
+
+.footer-brand p {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 /* === Responsive Header Behavior === */
